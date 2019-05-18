@@ -20,11 +20,15 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div className="ch-header d-flex  align-items-center">
-        <div className="ch-header-name">Cody Hillyard</div>
-        <ul className="nav">
-          {this.renderLinks()}
-        </ul>
+      <div className="ch-header container-fluid">
+        <div className="row">
+          <div className="col ch-header-name">Cody Hillyard</div>
+          <div className="col">
+            <ul className="nav">
+              {this.renderLinks()}
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
