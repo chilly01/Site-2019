@@ -1,35 +1,30 @@
 import React, { Component } from "react"; 
+import _ from "lodash"; 
+import { data } from "../../data/pages"; 
 
 export default class Header extends Component {
-  constructor(props){
-    super(props); 
-    this.state = {
-      selected : "home"
-    }
+
+  choosePage(e, page){
+    console.log({e,page}); 
+    e.preventDefault(); 
+    this.props.setPage(page); 
   }
 
-  
+  renderLinks(){
+    let pages = []; 
+    _.each(data.pages, (page => {
+      pages.push(<li key={page.key} className={`nav-item header-link-${page.key}`}>
+        <a className="nav-link" href="/"  onClick={(e) => this.choosePage(e, page.key)}>{page.name}</a> 
+      </li>); 
+    })); 
+    return pages; 
+  }
 
   render() {
     return (
       <div className="ch-header">
         <ul className="nav">
-          <li className="nav-item">
-            <a className="nav-link" href="/">Home</a> 
-          </li>
-         
-          <li className="nav-item">
-            <a className="nav-link" href="/">History</a> 
-          </li>
-         
-          <li className="nav-item">
-            <a className="nav-link" href="/">Blog</a> 
-          </li>
-         
-          <li className="nav-item">
-            <a className="nav-link" href="/">Projects</a> 
-          </li>
-         
+          {this.renderLinks()}
         </ul>
       </div>
     );
