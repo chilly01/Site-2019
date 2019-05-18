@@ -4,9 +4,7 @@ import { data } from "../../data/pages";
 
 export default class Header extends Component {
 
-  choosePage(e, page){
-    console.log({e,page}); 
-    e.preventDefault(); 
+  choosePage(page){
     this.props.setPage(page); 
   }
 
@@ -14,7 +12,7 @@ export default class Header extends Component {
     let pages = []; 
     _.each(data.pages, (page => {
       pages.push(<li key={page.key} className={`nav-item header-link-${page.key}`}>
-        <a className="nav-link" href="/"  onClick={(e) => this.choosePage(e, page.key)}>{page.name}</a> 
+        <span className="ch-nav nav-link" onClick={() => this.choosePage(page.key)}>{page.name}</span> 
       </li>); 
     })); 
     return pages; 
@@ -22,7 +20,8 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div className="ch-header">
+      <div className="ch-header d-flex  align-items-center">
+        <div className="ch-header-name">Cody Hillyard</div>
         <ul className="nav">
           {this.renderLinks()}
         </ul>
