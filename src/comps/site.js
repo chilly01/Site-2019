@@ -27,7 +27,9 @@ export default class Site extends Component {
     return (
       <div>
         <Header setPage={(page) => {this.setState({page})}} />
-        {this.showPage()}
+        <div className="container-fluid">
+          {this.showPage()}
+        </div>
       </div>
     );
   }
