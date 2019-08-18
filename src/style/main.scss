@@ -4,11 +4,14 @@ body {
 
 .ch-msg {
   margin-top: 25px; 
+  border-radius: 5px; 
   background-color: #ffffcc; 
 }
 
 .ch-img {
-  height:fit-content; 
+  height:fit-content;
+  border: 3px solid black; 
+  border-radius: 25px; 
 }
 
 .ch_act{
@@ -17,6 +20,12 @@ body {
 
 .about_body{
   margin: 15px; 
+}
+
+.list-group {
+  width: 50%;
+  margin: auto; 
+  text-align: center; 
 }
 
 .ch-header {
