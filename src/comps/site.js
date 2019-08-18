@@ -14,14 +14,13 @@ export default class Site extends Component {
   }
 
   showPage(){
-    switch (this.state.page){
-      case "home": return (<Home />);
-      case "blog": return (<Blog />);
-      case "history": return (<History />);
-      case "projects": return (<Projects />); 
-      default: return (null); 
+     return (<div className=""> 
+      <Home />
+      <Blog />
+      <History />
+      <Projects /> </div>); 
+      
     }
-  }
 
   render() {
     return (
