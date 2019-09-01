@@ -18,7 +18,7 @@ export default class Header extends Component {
     return pages; 
   }
 
-  render() {
+  render_old() {
     return (
       <div className="ch-header container-fluid">
         <div className="row">
@@ -31,5 +31,21 @@ export default class Header extends Component {
         </div>
       </div>
     );
+  }
+
+  render(){
+    return (<div class="intro">
+    <div class="header">
+      <div class="main-name">
+        Cody Hillyard
+        </div>
+        <div class="topnav">
+            <a href="/">Home</a>
+            <a href="/">Work</a>
+            <a href="/">Community</a>
+            <a href="/">Projects</a>
+        </div>
+      </div>
+  </div>); 
   }
 }

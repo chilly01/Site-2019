@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import Header from "./header/header"; 
 import Home from "./home/home";
-import Blog from "./blog/blog"; 
-import History from "./history/history"; 
-import Projects from "./projects/projects"; 
+import Header from "./header/header"; 
+
 
 export default class Site extends Component {
   constructor(props){
@@ -13,22 +11,11 @@ export default class Site extends Component {
     }
   }
 
-  showPage(){
-     return (<div className=""> 
-      <Home />
-      <Blog />
-      <History />
-      <Projects /> </div>); 
-      
-    }
-
   render() {
     return (
       <div>
-        <Header setPage={(page) => {this.setState({page})}} />
-        <div className="container-fluid">
-          {this.showPage()}
-        </div>
+        <Header />
+        <Home />
       </div>
     );
   }

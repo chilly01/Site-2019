@@ -1,5 +1,127 @@
-#news_feed {
-  background-color: blue; 
-  background-image: url("http://codyhillyard.com/assets/images/blue-home.jpg");  
-  background-size: cover; 
+.intro {
+  background-image: url(/assets/blue-home.jpg); 
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100%; 
+  height: 60px; 
+  background-color: black;
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+
+.main-name {
+  padding: 10px;
+ }
+
+.topnav {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+.topnav a{
+  padding: 22px 12px;
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:link{
+  color: white; 
+}
+.topnav a:visited{
+  color: white;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.computers {
+  display: flex; 
+  justify-content: flex-end;
+  background-image: url(/assets/cody-self.png); 
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about {
+  margin-right: 30px;
+  display: flex; 
+  flex-flow: column;
+  background-color: white;
+  font-size: 18px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  padding: 10px; 
+  align-self: center;
+  width: 50%;
+  max-height: 500px
+}
+
+.about-discription {
+  height: 200px;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.family {
+  background-image: url(/assets/fam-lucky.png); 
+  height: 500px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.mountains {
+  background-image: url(/assets/mountians.png); 
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.photography {
+  height: 500px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sports {
+  background-image: url(/assets/skiing.png); 
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer {
+  height: 200px; 
 }
