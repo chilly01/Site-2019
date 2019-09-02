@@ -53,6 +53,7 @@ export default class AboutMe extends Component {
           placeholder="Your Name Here" /><br />
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write any Ideas.."></textarea>
+        <button type="submit">Submit</button>     
       </form>
     </div>)
   }

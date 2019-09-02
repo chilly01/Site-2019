@@ -34,13 +34,13 @@ export default class Header extends Component {
   }
 
   render(){
-    return (<div class="intro">
+    return (<div id="main-div" class="intro">
     <div class="header">
       <div class="main-name">
         Cody Hillyard
         </div>
         <div class="topnav">
-            <a href="#home">Home</a>
+            <a href="#main-div">Home</a>
             <a href="#family">Work</a>
             <a href="#sports">Community</a>
             <a href="#footer">Projects</a>
