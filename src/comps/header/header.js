@@ -1,6 +1,6 @@
 import React, { Component } from "react"; 
 import _ from "lodash"; 
-import { data } from "../../data/pages"; 
+import { data } from "../../data/consts"; 
 
 export default class Header extends Component {
 
@@ -10,7 +10,7 @@ export default class Header extends Component {
 
   renderLinks(){
     let pages = []; 
-    _.each(data.pages, (page => {
+    _.each(data.consts.pages, (page => {
       pages.push(<li key={page.key} className={`nav-item header-link-${page.key}`}>
         <span className="ch-nav nav-link" onClick={() => this.choosePage(page.key)}>{page.name}</span> 
       </li>); 
@@ -40,10 +40,10 @@ export default class Header extends Component {
         Cody Hillyard
         </div>
         <div class="topnav">
-            <a href="/">Home</a>
-            <a href="/">Work</a>
-            <a href="/">Community</a>
-            <a href="/">Projects</a>
+            <a href="#home">Home</a>
+            <a href="#family">Work</a>
+            <a href="#sports">Community</a>
+            <a href="#footer">Projects</a>
         </div>
       </div>
   </div>); 
