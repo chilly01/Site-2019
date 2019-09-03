@@ -35,9 +35,12 @@
 }
 
 .about-discription {
+  font-family: 'Dancing Script', cursive;
   height: 205px;
   overflow: auto;
-  font-family: monospace;
-  font-size: 12px;
+  font-size: 20px;
   padding: 5px;
+    .feedback {
+      font-family: 'Courier New', Courier, monospace;
+    }
 }

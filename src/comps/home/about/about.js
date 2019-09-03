@@ -44,7 +44,9 @@ export default class AboutMe extends Component {
   }
 
   renderFeedback(){
-    return (<div className="feedback">
+    return (<div className="about-discription">
+    <p>Please provide any feedback or updates you would like to see on this site</p> 
+    <div className="feedback">
       <form action={() => {}}>
         <label for="name">Name</label>
         <input 
@@ -56,7 +58,7 @@ export default class AboutMe extends Component {
         <textarea id="subject" name="subject" placeholder="Write any Ideas.."></textarea>
         <button type="submit">Submit</button>     
       </form>
-    </div>)
+    </div></div>);
   }
 
   renderTabs(){    
