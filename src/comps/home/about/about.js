@@ -5,7 +5,7 @@ export default class AboutMe extends Component {
   constructor(props){
     super(props); 
     this.state = {
-      dis: 0
+      dis: 2
     }; 
   }
 
@@ -47,16 +47,18 @@ export default class AboutMe extends Component {
     return (<div className="about-discription">
     <p>Please provide any feedback or updates you would like to see on this site</p> 
     <div className="feedback">
-      <form action={() => {}}>
-        <label for="name">Name</label>
-        <input 
-          type="text" 
-          id="name" 
-          name="name" 
-          placeholder="Your Name Here" /><br />
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write any Ideas.."></textarea>
-        <button type="submit">Submit</button>     
+      <form>
+        <div className="feedback-name">
+          <div>Name</div>
+          <input type="text" id="name" name="name" placeholder="Your Name Here"/>
+        </div>
+        <div className="feedback-subject">
+          <div>Subject</div>
+          <textarea id="subject" name="subject" placeholder="Write any Ideas.."></textarea>
+        </div>
+        <div className="feedback-submit">
+          <button type="submit">Submit</button>     
+        </div>
       </form>
     </div></div>);
   }
