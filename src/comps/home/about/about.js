@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react'; 
+import _ from "lodash";
 
 export default class AboutMe extends Component {
   constructor(props){
@@ -58,13 +59,22 @@ export default class AboutMe extends Component {
     </div>)
   }
 
+  renderTabs(){    
+    const views = ["about me","about this site","feedback", ""];
+    let tabGroup = [];
+    _.each(views, (view, key) => {
+      let fnc = (key < 3) ? () => this.showAbout(key) : null; 
+      let className = (key === this.state.dis) ? "about_tab about_tab_sel" : "about_tab"; 
+      tabGroup.push(<div key={key} className={className} onClick={fnc}>{view}</div>); 
+    }); 
+    return tabGroup; 
+  }
+
   render() {
     let discription = this.getDiscription();  
     return ( <div className="about">
-      <div className="about_button_group">
-        <button className="about_button" onClick={() => this.showAbout(0)}>about me</button>
-        <button className="about_button" onClick={() => this.showAbout(1)}>about this site</button>
-        <button className="about_button" onClick={() => this.showAbout(2)}>feedback</button>
+      <div className="about_tab_group">
+        {this.renderTabs()} 
       </div>
         {discription}
     </div>); 
