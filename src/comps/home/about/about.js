@@ -1,11 +1,13 @@
 import React, { Component } from 'react'; 
 import _ from "lodash";
+import Feedback from "./feedback"; 
+import Socials from './socials';
 
 export default class AboutMe extends Component {
   constructor(props){
     super(props); 
     this.state = {
-      dis: 2
+      dis: 0
     }; 
   }
 
@@ -15,10 +17,17 @@ export default class AboutMe extends Component {
 
   getDiscription(){
     switch (this.state.dis){
-      case 1: return this.renderAboutSite(); 
-      case 2: return this.renderFeedback(); 
-      default: return this.renderAboutSelf();
+      case 1: return this.renderAboutSelf();
+      case 2: return this.renderAboutSite(); 
+      case 3: return this.renderFeedback(); 
+      default: return this.renderMyLinks(); 
     }
+  }
+
+  renderMyLinks(){
+    return (<div className="about-discription">
+      <Socials />
+    </div>); 
   }
 
   renderAboutSelf(){
@@ -46,28 +55,15 @@ export default class AboutMe extends Component {
   renderFeedback(){
     return (<div className="about-discription">
     <p>Please provide any feedback or updates you would like to see on this site</p> 
-    <div className="feedback">
-      <form>
-        <div className="feedback-name">
-          <div>Name</div>
-          <input type="text" id="name" name="name" placeholder="Your Name Here"/>
-        </div>
-        <div className="feedback-subject">
-          <div>Subject</div>
-          <textarea id="subject" name="subject" placeholder="Write any Ideas.."></textarea>
-        </div>
-        <div className="feedback-submit">
-          <button type="submit">Submit</button>     
-        </div>
-      </form>
-    </div></div>);
+    <Feedback />
+    </div>);
   }
 
   renderTabs(){    
-    const views = ["about me","about this site","feedback", ""];
+    const views = ["my links","about me","about this site","feedback", ""];
     let tabGroup = [];
     _.each(views, (view, key) => {
-      let fnc = (key < 3) ? () => this.showAbout(key) : null; 
+      let fnc = (key < 4) ? () => this.showAbout(key) : null; 
       let className = (key === this.state.dis) ? "about_tab about_tab_sel" : "about_tab"; 
       tabGroup.push(<div key={key} className={className} onClick={fnc}>{view}</div>); 
     }); 

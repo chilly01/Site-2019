@@ -39,7 +39,24 @@
   overflow: auto;
   font-size: 20px;
   padding: 5px;
-    .feedback {
-      font-family: 'Courier New', Courier, monospace;
+}
+
+.feedback {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.feedback-name{
+  padding-left: 10px;
+    #name {
+      width: 400px;
+    }
+}
+
+.feedback-subject{
+  padding: 10px;
+    #subject {
+      height: 200px;
+      width: 400px; 
     }
 }
