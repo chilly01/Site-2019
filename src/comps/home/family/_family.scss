@@ -1,0 +1,33 @@
+
+.family {
+  background-image: url(/assets/fam-lucky.png); 
+  height: 1000px;
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.family-stuff { 
+  display: flex; 
+  flex-flow: column; 
+  justify-content: space-between;
+  background-color: white; 
+  height: 100%;
+  width: 50%;
+  margin: auto; 
+}
+
+.photos {
+  height: 100px; 
+  width: 10px; 
+  background: red; 
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+.photos.active {
+  width: 100%; 
+}

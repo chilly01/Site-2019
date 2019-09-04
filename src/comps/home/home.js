@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import About from "./about/about"; 
+import Family from "./family/family"
 
 export default class Home extends Component {
   constructor(props){
@@ -12,6 +13,10 @@ export default class Home extends Component {
     window.onscroll= this.listenToScroll; 
   }
 
+  componentWillUnmount(){
+    window.onscroll=null; 
+  }
+
   listenToScroll = () => {
     let position= window.scrollY; 
     this.setState({position}); 
@@ -20,10 +25,12 @@ export default class Home extends Component {
 
   render() {
     return (<div className="home">
-      <div className="computers">
+      <div className="cody">
         <About />
       </div>
-      <div className="family">I love my family</div>
+      <div className="family">
+        <Family pos={this.state.position} />
+      </div>
       <div className="mountains">I live in the mountains</div>
       <div className="photography">I enjoy taking pictures</div>
       <div id="sports" className="sports">I watch a lot of sports</div>

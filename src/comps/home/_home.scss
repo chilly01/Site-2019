@@ -72,23 +72,12 @@
   color: black;
 }
 
-.computers {
+.cody {
   display: flex; 
   justify-content: flex-end;
   background-image: url(/assets/cody-self.png); 
   height: 700px;
   background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-
-.family {
-  background-image: url(/assets/fam-lucky.png); 
-  height: 1000px;
-  background-position: right;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
