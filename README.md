@@ -13,7 +13,55 @@ pages needed :
 Things needed to finish for Home page: 
 
 complete design
- - about 
- - family 
+	What do I do
+	  Computers 
+		Family 
+		Mountains
+		Photography
+		Cooking 
+		Hiking
+		Skiing
+		Boating
+		
+		
+Things that I've done... 
+	poker site
+	family village
+	About Me - 
+	  Social Media Links
+	  My Personal History
+		My Work History
+		My Values
+		My Religion
+	
+	Family -
+    About Lucky	
+		About the Hillyards
+		Mom's Family
+		Things about Chad, Cinnamon... 
+	
+	Home -  
+	  My Ward
+		About Logan
+		About Cache Valley
+		About Utah
+		Western US
+					
+	
+	Hobbies - 
+	  Hiking
+		Boating
+		Skiing
+		Working Out
+						
+	
+	Interests - 
+	  Sports fan
+		Technology Fan
+		Pop Culture
+		Marvel
+		Disney
+		Star Wars
+		Star Trek
  - 
 
