@@ -25,7 +25,7 @@ export default class AboutMe extends Component {
   }
 
   renderMyLinks(){
-    return (<div className="about-discription">
+    return (<div className="socials">
       <Socials />
     </div>); 
   }

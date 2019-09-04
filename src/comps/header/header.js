@@ -34,17 +34,20 @@ export default class Header extends Component {
   }
 
   render(){
-    return (<div id="main-div" className="intro">
+    return (<div id="main-div">
     <div className="header">
       <div className="main-name">
         Cody Hillyard
-        </div>
-        <div className="topnav">
-            <a href="#main-div">Home</a>
-            <a href="#family">Work</a>
-            <a href="#sports">Community</a>
-            <a href="#footer">Projects</a>
-        </div>
+      </div>
+      <div className="topnav">
+        <a href="#main-div">Home</a>
+        <a href="#family">Work</a>
+        <a href="#sports">Community</a>
+        <a href="#footer">Projects</a>
+      </div>
+    </div>
+      <div className="intro">
+        <div className="intro-banner">codyhillyard.com</div>
       </div>
   </div>); 
   }

@@ -19,8 +19,11 @@ export default class Socials extends Component {
 
 
   render() {
-    return (<div className='list-group'>
-      { this.renderLinks() }
-</div>)
+    return (<div>
+      <div className='socials-message'><p>Please feel free to contact me...</p></div>
+      <div className='list-group'>
+            { this.renderLinks() }      
+      </div>
+    </div>)
   }
 }

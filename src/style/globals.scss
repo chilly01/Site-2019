@@ -24,9 +24,12 @@ body {
 }
 
 .list-group {
-  min-width: 300px;
+  width: 300px;
   margin: auto; 
   text-align: center; 
+   a {
+     height:50px;
+   }
 }
 
 .ch-header {
