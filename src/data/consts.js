@@ -32,7 +32,7 @@ const socials = [
   },
   {
     key:'em' , 
-    link: null ,
+    link: 'mailto:codyhillyard@gmail.com' ,
     name:'Email', 
     fa:'fa-envelope-open'
   },

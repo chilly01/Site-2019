@@ -11,7 +11,7 @@
   align-self: center;
   width: 50%;
   min-width: 500px;
-  height: 500px
+  height: 500px; 
 }
 
 .about_tab_group {
@@ -24,9 +24,16 @@
 }
 
 .about_tab {
+  cursor: pointer;
   padding: 5px 15px;
   text-align: center;
   border-left: 1px solid black; 
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .2s;
+    &:hover {
+      background-color: lightblue; 
+      font-size: 22px;
+    }
 }
 
 .about_tab_sel{
@@ -50,6 +57,16 @@
   margin-bottom: 50px;
   font-family: 'Dancing Script', cursive;
   font-size: 28px;
+}
+
+.socials__item {
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .2s;
+    &:hover {
+      background-color: lightblue; 
+      font-size: 28px;
+      height: 70px;
+    }
 }
 
 .feedback {

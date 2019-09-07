@@ -11,7 +11,7 @@ export default class Socials extends Component {
         key={link.key}
         href={ link.link }
         target="_blank" rel="noopener noreferrer"
-        className='list-group-item'>
+        className='list-group-item socials__item'>
           <i className={`fa ${link.fa}`} aria-hidden="true"></i> {link.name}</a>); 
     }); 
     return linklist; 
